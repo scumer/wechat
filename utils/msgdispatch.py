@@ -14,7 +14,7 @@ def register_message(msg_type):
 
 
 def msgdispatch(msg):
-    msg_type = msg.type + '.%s' % msg.event if hasattr(msg, 'event') else ''
+    msg_type = msg.type + ('.%s' % msg.event if hasattr(msg, 'event') else '')
     msg_type += '.%s' % msg.key if hasattr(msg, 'key') and msg.key else ''
     logging.debug(msg_type)
     try:

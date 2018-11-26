@@ -6,8 +6,9 @@ import tornado.web
 from wechatpy.utils import check_signature
 # from wechatpy import WeChatClient
 from wechatpy.exceptions import InvalidSignatureException
-from wechatpy import parse_message
+from wechatpy import parse_message, events
 from wechatpy.replies import create_reply
+from wechatpy.messages import TextMessage
 from utils import msgdispatch, register_message, DEFAULT_MSG_HANDLER
 
 import setting
