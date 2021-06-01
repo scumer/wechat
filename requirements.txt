@@ -10,6 +10,6 @@ python-dateutil==2.7.5
 requests==2.20.1
 six==1.11.0
 tornado==5.1.1
-urllib3==1.24.1
+urllib3==1.26.5
 wechatpy==1.7.5
 xmltodict==0.11.0
